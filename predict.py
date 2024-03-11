@@ -98,5 +98,5 @@ if st.sidebar.button("🔮 Predict"):
         st.balloons()
     elif prediction == 1:
         st.error("❌ The customer is expected to default on the payment.")
-        st.image('default.jpg', caption='Prediction 1 Image', use_column_width=True)
+        st.image('default.png', caption='Prediction 1 Image', use_column_width=True)
         st.warning("💔 Please review the user inputs and consider taking appropriate action.")
