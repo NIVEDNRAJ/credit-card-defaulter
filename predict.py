@@ -8,6 +8,7 @@ def load_model():
         data = dill.load(file)
     return data
 
+
 data = load_model()
 model = data["model"]
 pipeline = data["pipeline"]
@@ -25,7 +26,7 @@ st.sidebar.header("👤 User Inputs")
 
 
 # Define the input fields for each feature
-LIMIT_BAL = st.sidebar.number_input("💳 Credit Limit (LIMIT_BAL)", min_value=0)
+LIMIT_BAL = st.sidebar.number_input("💳 Credit Limit kazhinju (LIMIT_BAL)", min_value=0)
 SEX = st.sidebar.selectbox("🚻 Gender", ["Male", "Female", "Other"])
 EDUCATION = st.sidebar.selectbox("📚 Education Level", ["Graduate School", "University", "High School", "Others"])
 MARRIAGE = st.sidebar.selectbox("💍 Marital Status", ["Married", "Single", "Others"])
